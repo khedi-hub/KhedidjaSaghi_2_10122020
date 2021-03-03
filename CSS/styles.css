@@ -33,15 +33,16 @@
 body
 {
     font-family: 'ralewayregular','ralewaybold','ralewayblack', Arial, Helvetica;
-    width: 98%;
+    width: 100%;
+    height: auto;
     margin:auto;
     overflow: scroll;
-    margin-left: 2%;
+
 }
 /*header de la page avec logo et menu*/
 header
 {
-    width: 100%;
+    width: 95%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -51,8 +52,7 @@ header
 #bloc1
 {
     width: 100%;
-    height: 90%;
-    margin-left: auto; 
+    height: 90%; 
     display: flex;
     flex-direction: row;  
     justify-content: space-between;  
@@ -217,7 +217,6 @@ header
 {
     width: 100%;
     height: 60vh;
-    margin-left: auto;
     display: flex;
     flex-direction: column;
 
@@ -254,6 +253,7 @@ header
     background-color: white ;
     border-style: none;
     border-color: #f2f2f2;
+    font-family: 'ralewayregular','ralewaybold','ralewayblack', Arial, Helvetica;
     font-size: 1.2em;    
 }
 .button2
@@ -269,6 +269,7 @@ header
     border-color:#0065FC; 
     font-size: 0.8em;
     font-weight: bold;
+    font-family: 'ralewayregular','ralewaybold','ralewayblack', Arial, Helvetica;
     color: white;
     text-align:center;
     
@@ -319,6 +320,7 @@ header
     justify-content: space-between;
     padding-right: 2%;
     background-color: white;
+    font-family: 'ralewayregular','ralewaybold','ralewayblack', Arial, Helvetica;
     font-size: 0.8em ;
     font-weight: bold ;
 
@@ -330,6 +332,7 @@ header
     border-radius: 25px 25px 25px 25px;
     border-color: #0065FC ;
 }
+
 .buttonbloc .button i
 {
     border-radius: 50%;
@@ -340,6 +343,11 @@ header
     font-weight: bold;
     margin-left: -9%;
     margin-right: 2%;
+    
+}
+.buttonbloc i.fas 
+{
+    color:#0065FC;
 }
 /* fin du bloc avec info*/
 .info
@@ -351,6 +359,10 @@ header
     margin-bottom: 2%;
     margin-top: 0%;
    
+}
+.info i.fas
+{
+    color: #0065FC;
 }
 .info i
 {   
@@ -483,11 +495,12 @@ header
 /* section1 container1 avec hébergement et populaire*/
 .container1
 {
-    width: 99%;
+    width: 95%;
     height: 85vh;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-left: 0%;
+    
 }
 #hebergement
 {
@@ -509,6 +522,17 @@ header
     width: 100%;
     font-size: 1.5em;
     font-weight: bold;   
+}
+#hebergement a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: transparent;
+}
+#hebergement a:hover
+{
+    border:none;
 }
 .more
 {
@@ -564,6 +588,14 @@ header
     margin-top: 1%;
     margin-left: 2%;
 }
+.fa-star
+{
+    color:#f2f2f2
+}
+.fa-star.blue
+{
+    color:#0065FC;
+}
 .text1 i
 {
     line-height: 1.3em;
@@ -596,6 +628,17 @@ header
 .populaire h2 i
 {
     float: right;
+}
+.populaire a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: transparent;
+}
+.populaire a:hover
+{
+    border:none;
 }
 .picture2
 {        
@@ -768,7 +811,7 @@ header
 /* section  activités à Marseille*/
 #activites
 {
-    width: 99%;
+    width: 95%;
     height: 90vh;
     margin: auto;
     background-color: transparent;
@@ -796,6 +839,17 @@ header
     display: flex;
     flex-direction: column;
 }
+.picture3 a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: transparent;
+}
+.picture3 a:hover
+{
+    border:none;
+}
 .picture3 img
 {
     width: 100%;
@@ -820,6 +874,17 @@ header
     justify-content: space-between;
     background-color: transparent;
 
+}
+.picture4 a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: transparent;
+}
+.picture4 a:hover
+{
+    border:none;
 }
 .picture4 p
 {
@@ -982,8 +1047,9 @@ header
 /* footer*/
 #footer
 {
-    width: 99%;
+    width: 95%;
     height: 38vh;
+    margin: auto;
     margin-top: 9%;
     display: flex;
     flex-direction:row;
@@ -1013,6 +1079,7 @@ header
     {
         width: 99%;
         height: 110vh;
+        margin: auto;
         margin-top: 9%;
         flex-direction:column;
         justify-content: space-around;

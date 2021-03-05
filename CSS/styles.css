@@ -33,10 +33,11 @@
 body
 {
     font-family: 'ralewayregular','ralewaybold','ralewayblack', Arial, Helvetica;
-    width: 100%;
+    width: 95%;
     height: auto;
     margin:auto;
     overflow: scroll;
+    
 
 }
 /*header de la page avec logo et menu*/
@@ -49,7 +50,7 @@ header
     flex-direction: column;
 }
 
-#bloc1
+#blocmenu
 {
     width: 100%;
     height: 90%; 
@@ -67,41 +68,43 @@ header
     margin-top: 2%;
     margin-left: 2%;
 }
-.menu
+.menu nav
 {
-    width: 80%;
-    display: flex;
-    flex-direction: row;   
-    margin-right: 0%;
-    
+    width: 40vw;
+    height: 15vh;        
 }
 .menu ul
 {  
-    width: 75vw;
-    display: inline-flex;
+    width: 35vw;
+    height: 10vh;       
     flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;     
+    justify-content: space-between;
+    list-style-type: none;
+    display: inline-flex;    
 }
 .menu ul li
 {
-    margin-right: 5%;
-    margin-left: 2%;
-    margin-top: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
+    
+    text-align: justify;
+    padding-top: 5%;
+    
 }
-.menu ul li a
+.menu a
 {
     text-decoration: none;
     color: black;
     font-size: 1.3em;
 }
-.menu ul li a:hover
+.menu a:hover
+{
+    color: #0065fc;
+}
+.menu li:hover
 {
     border-top: 1px solid #0065FC;
-    padding-top: 15%;
-    color: #0065FC;
+    padding-top:5%;
+    color: #0065FC;    
+    
 }
 /*media queries du header pour logo et menu bloc1*/
 @media screen and (max-width:1024px)
@@ -117,7 +120,7 @@ header
 }
 @media screen and (max-width:700px)
 {
-    #bloc1
+    #blocmenu
     {
         width: 100%;
         height: 30vh;
@@ -213,7 +216,7 @@ header
 
 /*  header bloc2 formulaire avec button et input*/
 
-#bloc2
+#formulaire
 {
     width: 100%;
     height: 60vh;
@@ -221,12 +224,12 @@ header
     flex-direction: column;
 
 }
-#bloc2 .p1 
+#formulaire .p1 
 {
     margin-top: 0%;
 }
 /*debut du formulaire avec la section recherche*/
-.group1
+.recherche
 {
 
     width: 30%;
@@ -234,11 +237,11 @@ header
     display: flex;
     flex-direction: row;   
 }
-.button1
+.map
 {
     width: 13%;
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
     background-color: #f2f2f2;
     border-color: #f2f2f2;
     border-style: none;
@@ -256,13 +259,13 @@ header
     font-family: 'ralewayregular','ralewaybold','ralewayblack', Arial, Helvetica;
     font-size: 1.2em;    
 }
-.button2
+.rechercher
 {
     z-index: 1;
     display: inline-block;
     flex-direction: row;
-    width: 30%;
-    border-top-right-radius: 15%;
+    width: 31%;
+    border-top-right-radius:15%;
     border-bottom-right-radius: 15%;
     background-color: #0065FC; 
     border-style:none;
@@ -275,7 +278,7 @@ header
     
     
 }
-.button2 i
+.rechercher i
 {
     
     color:transparent;
@@ -286,7 +289,7 @@ header
 
 
 /* formulaire filtre avec button*/
-.group2
+.groupfiltre
 {
     display: flex;
     flex-direction: row;
@@ -378,15 +381,15 @@ header
 /* media queries bloc2 formulaire*/
 @media screen and (max-width:1024px)
 {
-    #bloc2
+    #formulaire
     {
         height: 65vh;
     }
-    .group1
+    .recherche
     {
         width: 42%;        
     }
-    .button1
+    .map
     {
         width:14%;
     }
@@ -395,11 +398,11 @@ header
         width:60%;
         font-size: 1em;
     }
-    .button2 i
+    .rechercher i
     {
         font-size: 0em;
     }
-    .group2
+    .groupfiltre
     {
         flex-direction:column;        
         flex-wrap: wrap;
@@ -428,19 +431,19 @@ header
 }
 @media screen and (max-width:700px)
 {
-    #bloc2
+    #formulaire
     {
         width: 100%;
         margin: auto;
         height: 83vh;
     }
-    .group1
+    .recherche
     {
         width: 85%;
         margin-left: 5%;
                
     }
-    .button1
+    .map
     {
         width: 15%;
         z-index: 1;
@@ -454,7 +457,7 @@ header
 
     }
     
-    .button2
+    .rechercher
     {
         z-index: 1;
         flex-wrap: wrap;
@@ -464,7 +467,7 @@ header
         color: transparent;
                 
     }
-    .button2 i
+    .rechercher i
     {
         
         visibility: visible;
@@ -475,7 +478,7 @@ header
         
         
     }
-    .group2
+    .groupfiltre
     {
         display: flex;
         flex-direction: column;
@@ -493,7 +496,7 @@ header
      
 }
 /* section1 container1 avec hébergement et populaire*/
-.container1
+.hebergements
 {
     width: 95%;
     height: 85vh;
@@ -510,7 +513,7 @@ header
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #f2f2f2;
-    border-radius: 5% ;
+    border-radius: 15%;
 
 }
 #hebergement h2 
@@ -543,7 +546,7 @@ header
     padding-left: 3%;
     font-weight: bold;
 }
-.picture1
+.carte1
 {
     
     width: 16vw;
@@ -553,13 +556,13 @@ header
     margin-left: 11px;
     margin-right: 9px;
     margin-bottom:20px; 
-    border-radius: 8%;
+    border-radius: 15%;
     font-size: 9px; 
     font-style: normal; 
     padding: 2px 2px 2px 2px;      
     background-color:white;
 }
-.gallery1
+.vignette1
 {
     width: 99%;
     height: 18vh;
@@ -570,12 +573,12 @@ header
     
     
 }
-.gallery1 img
+.vignette1 img
 {
     width: 98%;
     height: 14vh;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     image-rendering: -webkit-optimize-contrast;
     
 }   
@@ -606,7 +609,7 @@ header
 .populaire
 {
     width: 28%;
-    border-radius: 5%;
+    border-radius: 15px;
     background-color: #f2f2f2;
     display: flex;
     justify-content:space-between;
@@ -640,7 +643,7 @@ header
 {
     border:none;
 }
-.picture2
+.carte2
 {        
     width: 20vw;
     height: 20vh;
@@ -649,24 +652,24 @@ header
     flex-wrap: wrap;
     margin-left: 10%;
     margin-bottom: 10%;
-    border-radius: 8%;
+    border-radius: 15px;
     background-color: white;    
 }
-.gallery2
+.vignette2
 {
     width: 38%;
     height: 90%;
     margin: 5px 5px 5px 5px;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 
 }
-.gallery2 img
+.vignette2 img
 {
     width: 98%;
     height: 100%;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     image-rendering: -webkit-optimize-contrast;
     
 }
@@ -708,7 +711,7 @@ header
     {
         line-height: 7em;
     }
-    .picture2
+    .carte2
     {
         width: 25vw;
     }
@@ -720,7 +723,7 @@ header
 @media screen and (max-width:700px)
 {
     
-    .container1
+    .hebergements
     {
         height: 100%;
         flex-direction: column-reverse;
@@ -738,13 +741,13 @@ header
         border-radius: 0%;
         background-color: white;
     }
-    .picture1
+    .carte1
     {
         width: 80%;
         height: 29vh;
         box-shadow: 5px 5px 5px 5px #f2f2f2;
     }
-    .gallery1 img
+    .vignette1 img
     {
         width: 98%;
         height: 18vh;
@@ -773,13 +776,13 @@ header
         background-color: #f2f2f2 ; 
         align-items: center; 
     }
-    .picture2
+    .carte2
     {
         width: 85%;
         height: 29vh;
         box-shadow: 5px 5px 5px 5px #f2f2f2;
     }
-    .gallery2
+    .vignette2
     {
         width: 40%;
         height: 95%;
@@ -828,7 +831,7 @@ header
         margin-top: 5%;
     
 }
-.picture3
+.carte3
 {
     width: 20% ;
     height: 68vh;
@@ -839,18 +842,18 @@ header
     display: flex;
     flex-direction: column;
 }
-.picture3 a
+.carte3 a
 {
     cursor: pointer;
     text-decoration: none;
     color: black;
     border: transparent;
 }
-.picture3 a:hover
+.carte3 a:hover
 {
     border:none;
 }
-.picture3 img
+.carte3 img
 {
     width: 100%;
     height: 60vh;
@@ -858,12 +861,12 @@ header
     border-top-right-radius: 10%;  
     image-rendering: -webkit-optimize-contrast;
 }
-.picture3 p
+.carte3 p
 {
     margin-left: 6%;
     width: 85%;
 }
-.picture4
+.carte4
 {
     width: 20%;
     height: 68vh;
@@ -875,24 +878,24 @@ header
     background-color: transparent;
 
 }
-.picture4 a
+.carte4 a
 {
     cursor: pointer;
     text-decoration: none;
     color: black;
     border: transparent;
 }
-.picture4 a:hover
+.carte4 a:hover
 {
     border:none;
 }
-.picture4 p
+.carte4 p
 {
     margin-left: 6%;
     width: 90%;
 }
 
-.gallery3
+.vignette3
 {
     width: 98%;
     height: 29vh;
@@ -902,7 +905,7 @@ header
     flex-direction: column;
     background-color: white;
 }
-.gallery3 img
+.vignette3 img
 {
     width: 100%;
     height: 20vh;
@@ -911,7 +914,7 @@ header
     image-rendering: -webkit-optimize-contrast;
 }
 
-.gallery4
+.vignette4
 {
     width: 98%;
     height: 25vh;
@@ -921,7 +924,7 @@ header
     display: flex;
     flex-direction: column;
 }
-.gallery4 img
+.vignette4 img
 {
     width: 100%;
     height: 18vh;
@@ -929,7 +932,7 @@ header
     border-top-right-radius: 10%;
     image-rendering: -webkit-optimize-contrast;
 }
-.gallery5
+.vignette5
 {
     width: 98%;
     height: 30vh;
@@ -939,7 +942,7 @@ header
     display: flex;
     flex-direction: column;
 }
-.gallery5 img
+.vignette5 img
 {
     width: 100%;
     height: 22vh;
@@ -950,39 +953,39 @@ header
 /* media queries container2*/
 @media screen and (max-width:1024px)
 {
-    .picture3
+    .carte3
     {
         height: 50vh;
     }
-    .picture3 img 
+    .carte3 img 
     {
         height: 45vh;
     }
-    .picture4
+    .carte4
     {
         height: 50vh;
     }
-    .gallery3
+    .vignette3
     {
         height: 19vh ;
     }
-    .gallery3 img 
+    .vignette3 img 
     {
         height: 12vh;
     }
-    .gallery4
+    .vignette4
     {
         height: 19vh;
     }
-    .gallery4 img 
+    .vignette4 img 
     {
         height: 12vh;
     }
-    .gallery5 
+    .vignette5 
     {
         height: 19vh;
     }
-    .gallery5 img
+    .vignette5 img
     {
         height: 12vh ;
     }
@@ -1007,38 +1010,38 @@ header
         margin-bottom: 0.5%;
     }
 
-    .picture3
+    .carte3
     {
 
         width: 80%;
         height: 30vh;  
          
     }
-    .picture3 img
+    .carte3 img
     {
         width: 100%;
         height: 22vh;        
     }
-    .picture4
+    .carte4
     {
         width: 80%;
         height: 68vh;
         margin-top: 0%; 
           
     }
-    .gallery3
+    .vignette3
     {
         height: 30vh;
     }
-    .gallery3 img 
+    .vignette3 img 
     {
         height: 22vh;
     }
-    .gallery4
+    .vignette4
     {
         height: 30vh;
     }
-    .gallery4 img 
+    .vignette4 img 
     {
         height: 22vh;
     }

@@ -37,6 +37,7 @@ body
     height: auto;
     margin:auto;
     overflow: scroll;
+    overflow-x: hidden;
     
 
 }

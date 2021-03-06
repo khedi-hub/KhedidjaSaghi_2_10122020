@@ -597,10 +597,12 @@ header
 .vignette1 img
 {
     width: 100%;
-    height: 14vh;
+    height: 16vh;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     image-rendering: -webkit-optimize-contrast;
+    object-fit: cover;
+    object-position:100% 50%;
     
 }   
 .text1 p
@@ -678,7 +680,7 @@ header
 }
 .vignette2
 {
-    width: 38%;
+    width: 40%;
     height: 90%;
     margin: 5px 5px 5px 5px;
     border-top-left-radius: 15px;
@@ -692,6 +694,8 @@ header
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     image-rendering: -webkit-optimize-contrast;
+    object-fit: cover;
+    object-position: 60% 60%;
     
 }
 .text2 
@@ -775,6 +779,8 @@ header
         margin: 5px 5px 5px 0px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        object-fit: cover;
+        object-position: ;
         
     
     }
@@ -855,7 +861,7 @@ header
 .carte3
 {
     width: 20% ;
-    height: 68vh;
+    height: 60vh;
     margin-top: 5%;    
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
@@ -877,20 +883,24 @@ header
 .carte3 img
 {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;  
     image-rendering: -webkit-optimize-contrast;
+    object-fit: cover;
+    object-position: 45% 50%;
 }
 .carte3 p
 {
     margin-left: 6%;
     width: 85%;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 .carte4
 {
     width: 20%;
-    height: 68vh;
+    height: 60vh;
     margin-top: 5%;
     border-radius: 15px;
     display: flex;
@@ -919,7 +929,7 @@ header
 .vignette3
 {
     width: 98%;
-    height: 29vh;
+    height: 30vh;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
     border-radius: 15px;
     display: flex;
@@ -929,16 +939,23 @@ header
 .vignette3 img
 {
     width: 100%;
-    height: 20vh;
+    height: 22vh;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     image-rendering: -webkit-optimize-contrast;
+    object-fit: cover;
+    object-position: 100% 40%;
+}
+.vignette3 p
+{
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 .vignette4
 {
     width: 98%;
-    height: 25vh;
+    height: 22vh;
     background-color:white ;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
     border-radius: 15px;
@@ -948,15 +965,22 @@ header
 .vignette4 img
 {
     width: 100%;
-    height: 18vh;
+    height: 15vh;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     image-rendering: -webkit-optimize-contrast;
+    object-fit: cover;
+    object-position: 40% 18%;
+}
+.vignette4 p
+{
+    font-weight: bold;
+    font-size: 0.8em;
 }
 .vignette5
 {
     width: 98%;
-    height: 30vh;
+    height: 27vh;
     background-color:white ;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
     border-radius: 15px;
@@ -966,11 +990,19 @@ header
 .vignette5 img
 {
     width: 100%;
-    height: 22vh;
+    height: 19vh;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     image-rendering: -webkit-optimize-contrast;
+    object-fit: cover;
+    object-position: 100% 8%;
 }
+.vignette5 p
+{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
 /* media queries container2*/
 @media screen and (max-width:1024px)
 {

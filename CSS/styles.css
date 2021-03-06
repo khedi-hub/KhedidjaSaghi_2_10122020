@@ -110,7 +110,9 @@ header
 {
     border-top: 1.5px solid #0065FC;
     padding-top:6%;
-    color: #0065FC;    
+    color: #0065FC; 
+     
+
     
 }
 /*media queries du header pour logo et menu bloc1*/
@@ -646,7 +648,7 @@ header
     height: 5vh;
     font-size: 1.5em;
     font-weight: bold;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-right: 5%;
     margin-left: 6%;
     padding-bottom: 2%;
@@ -842,27 +844,24 @@ header
 #activites
 {
     width: 95%;
-    height: 90vh;
+    height: 75vh;
     margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    
-
 }
 #activites h2
 {
         width: 100%;
-        margin-top: 5%;
-    
 }
 .carte3
 {
-    width: 20% ;
-    height: 60vh;
-    margin-top: 5%;    
+    width: 22% ;
+    height: 60vh;    
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
     background-color:white ;
@@ -899,9 +898,8 @@ header
 }
 .carte4
 {
-    width: 20%;
+    width: 22%;
     height: 60vh;
-    margin-top: 5%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -1106,11 +1104,10 @@ header
     width: 95%;
     height: 38vh;
     margin: auto;
-    margin-top: 9%;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #f2f2f2;             
 }
 .end
@@ -1118,6 +1115,7 @@ header
     width: 20%;
     height: 30vh;
     margin-right: 5%;
+    margin-left: 3%;
      
 }
 .end p

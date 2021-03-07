@@ -66,8 +66,8 @@ header
 }
 #logo img
 {
-    width:50%;
-    margin-top: 7%;
+    width:40%;
+    margin-top: 12%;
     margin-left: 2%;
 }
 .menu nav
@@ -95,8 +95,8 @@ header
 {
     text-decoration: none;
     color: black;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.2em;
+    
 }
 .menu .item3 a
 {
@@ -109,10 +109,8 @@ header
 .menu li:hover
 {
     border-top: 1.5px solid #0065FC;
-    padding-top:6%;
+    padding-top:8%;
     color: #0065FC; 
-     
-
     
 }
 /*media queries du header pour logo et menu bloc1*/
@@ -237,7 +235,7 @@ header
 #formulaire .p1 
 {
     margin-top: 0%;
-    font-weight: bold;
+    
 }
 /*debut du formulaire avec la section recherche*/
 .recherche
@@ -262,14 +260,17 @@ header
 .search
 {
     width: 55%;
+    padding-left: 4%;
     color: black;
     cursor: pointer;
     background-color: white ;
     border-color: #f2f2f2;
     border: 0.2px thin;
     font-family: 'ralewayregular','ralewaybold','ralewayblack', Arial, Helvetica;
-    font-size: 1.2em;    
+    font-size: 1em;
+  
 }
+
 .rechercher
 {
     z-index: 1;
@@ -383,12 +384,13 @@ header
     align-items: center;
     margin-bottom: 2%;
     margin-top: 0%;
-    font-weight:bold ;
+    
    
 }
 .info i.fas
 {
     color: #0065FC;
+    font-weight: bold;
 }
 .info i
 {   
@@ -522,7 +524,7 @@ header
 .hebergements
 {
     width: 95%;
-    height: 85vh;
+    height: 90vh;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -544,9 +546,9 @@ header
     
     padding-bottom: 0.5%;
     padding-left: 3%;
-    margin-top: 2%;
+    margin-top: 5%;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;   
 }
 #hebergement a
@@ -639,6 +641,7 @@ header
     display: flex;
     justify-content:space-between;
     flex-direction: column; 
+    
    
 
 }
@@ -646,9 +649,9 @@ header
 {
     width: 85%;
     height: 5vh;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-top: 5%;
+    margin-top: 11%;
     margin-right: 5%;
     margin-left: 6%;
     padding-bottom: 2%;
@@ -683,7 +686,7 @@ header
 .vignette2
 {
     width: 40%;
-    height: 90%;
+    height: 93%;
     margin: 5px 5px 5px 5px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -702,19 +705,21 @@ header
 }
 .text2 
 {
-    width: 50%;
-    height: 75%;   
+    width: 42%;
+    height: 92%;   
     margin-top: 2%;
+    margin-top: 3;
+    margin-left: 2%;
 }
 .text2 p 
 {
     font-size: 0.75em;
-    line-height: 1.3em;
+    line-height: 1.6em;
     margin-top: 2px;
 }
 .text2 i 
 {
-    line-height: 6.5em;
+    line-height: 8em;
     font-size: 0.8em;
 }
 /* media queries  du container1 :hebergements et populaire*/
@@ -824,6 +829,7 @@ header
         width: 50%;
         height: 90%;
         margin-top:0.5%;
+        
     }
     .text2 p 
     {
@@ -857,6 +863,7 @@ header
 #activites h2
 {
         width: 100%;
+        font-size: 1.2em;
 }
 .carte3
 {
@@ -1102,8 +1109,9 @@ header
 #footer
 {
     width: 95%;
-    height: 38vh;
+    height: 30vh;
     margin: auto;
+    margin-bottom: 5%;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;

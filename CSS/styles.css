@@ -49,6 +49,7 @@ header
     margin: auto;
     display: flex;
     flex-direction: column;
+    
 }
 
 #blocmenu
@@ -58,11 +59,13 @@ header
     display: flex;
     flex-direction: row;  
     justify-content: space-between; 
-    margin-top: 1%; 
+    margin-top: 1%;
+     
 }
 #logo
 {
     width: 20%;
+    
 }
 #logo img
 {
@@ -114,39 +117,59 @@ header
     
 }
 /*media queries du header pour logo et menu bloc1*/
+
 @media screen and (max-width:1024px)
 {
     #logo
     {
-        width: 20%;    
-    }
-    #logo img
-    {
-        width:97%;
+        width: 25%;    
     }
 }
+@media screen and (max-width:900px)
+{
+    #logo
+    {
+        width: 28%;    
+    }
+    .menu nav
+    {
+        width: 50vw;
+               
+    }
+    .menu ul
+    {  
+        width: 45vw;
+          
+    }
+}
+
 @media screen and (max-width:700px)
 {
-    #blocmenu
-    {
-        width: 100%;
-        height: 30vh;
-        margin: auto;
-        flex-direction: column;
-    }
+    
     #logo
-    {   
-        margin-top: 9%;
-        margin-left: 4%;
-        position: relative;
-        width: 45%;
+    {
+        width:100%;
+        position:relative;
         z-index: -1;
+
     }
     #logo img
     {    
-        width: 60%; 
-        z-index: -1;  
+        width: 100%; 
+        z-index: -1; 
+        margin-top:25%; 
     }
+    #blocmenu
+    {
+        width: 100%;
+        height: 29vh; 
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-between; 
+        margin-top: 1%;
+        border-bottom: 3px solid #f2f2f2; 
+    }
+    
     .menu  ul li .item
     {   
         z-index: 1;        
@@ -156,7 +179,7 @@ header
        order: 1; 
        height: 30px;
        width: 139px;        
-       margin-left: -8%;     
+       margin-left: -23%;   
        z-index: 1;               
     }
     .menu .item2
@@ -164,10 +187,10 @@ header
         order: 2; 
         height: 30px;
         width: 130px;
-        padding-right: 2% ;
+       padding-right: 2% ;
         padding-left: 5%;
-        margin-left: 15%;        
-        margin-right: 6%;        
+        margin-left: 13%;        
+        margin-right: 14%;      
     }
     .menu .item3 
     {
@@ -177,29 +200,26 @@ header
         margin-left: 55%;
         margin-right: 4%;
         margin-bottom:4%; 
-        text-align: right;          
+        text-align: right;    
     }
     .menu
     {
-       position: absolute;
-        width: 97%;
-        height: 25%;
-        margin-left: -2%;
-        margin-top: 6%;
-        z-index: 1;  
+        position: absolute;
+        position: relative;
+        width: 410vw;
+        height: 30vh;
+        margin-right: 5%;   
+        z-index: 1; 
+        
                      
     }
     .menu ul     
-    {    
-        width: 100%;
-        height: 70%;
-        margin-top: 5%;
-        margin-left: 0%;
-        padding-right: 23%;
-        border-bottom: 3px solid #f2f2f2;
+    {   position: absolute;
+        width: 95%;
+        height: 25vh;        
         flex-direction: row;
         flex-wrap: wrap; 
-          
+        
     }     
     .menu ul li a
     {
@@ -214,13 +234,27 @@ header
     }
     .menu ul li a:hover
     {
-        border-top: none;
+    
         border-bottom: 2px solid #0065FC;
         padding-bottom: 15%;
         color: #0065FC;
+        
     }
+    .menu ul li:hover
+    {
+        border-top: none;
+    }
+
+
+}
+@media screen and (max-width:576px)
+{
     
 }
+@media screen and (max-width:320px)
+{
+    
+}   
 
 /*  header bloc2 formulaire avec button et input*/
 
@@ -230,21 +264,18 @@ header
     height: 60vh;
     display: flex;
     flex-direction: column;
-
 }
 #formulaire .p1 
 {
-    margin-top: 0%;
-    
+    margin-top: 0%;    
 }
 /*debut du formulaire avec la section recherche*/
 .recherche
 {
-
     width: 30%;
     height: 7vh;
     display: flex;
-    flex-direction: row;   
+    flex-direction: row; 
 }
 .map
 {
@@ -310,6 +341,7 @@ header
     width: 95%;
     height: 18vh;
     margin-top: 2%;
+    
 }
 .filtre
 {
@@ -319,19 +351,20 @@ header
 }
 .buttonbloc
 {   
-    width: 69%;
+    width: 75%;
     height: 13vh;
     display: flex;
     flex-direction: row;
     flex-flow:wrap;
     align-items: center;
     justify-content:space-around;
+
     
 }
 .button
 {
     width: auto;
-    height: 8vh;
+    height: 7.5vh;
     border-radius: 25px 25px 25px 25px;
     border: 2px solid #f2f2f2;
     display: flex;  
@@ -357,7 +390,7 @@ header
 .buttonbloc .button i
 {
     border-radius: 50%;
-    padding: 14px;
+    padding: 13px;
     border:2px solid #f2f2f2;
     background-color: #deebff;
     margin-left: -9.5%;
@@ -367,13 +400,13 @@ header
 .buttonbloc i.fas 
 {
     color:#0065FC;
-    font-size: 19px;
-    font-weight: bold;
+    font-size: 17px;
+    
 }
 .buttonbloc i.fa-child
 {
-    padding: 14.5px 18px 14.5px 18px;
-    font-size: 19.5px;
+    padding: 13px 16px 13px 16px;
+    font-size: 17.5px;
 }
 /* fin du bloc avec info*/
 .info
@@ -404,55 +437,145 @@ header
     
 }
 /* media queries bloc2 formulaire*/
+
+@media screen and (max-width: 1200px)
+{
+    .recherche
+{
+    
+    height: 6vh;
+    
+}
+    .search
+    {
+        width:57%;
+    } 
+    
+    .buttonbloc
+    {   
+        width: 85%; 
+        
+             
+    }
+    .button
+    {
+        height: 60%;
+    }
+    .buttonbloc i.fas 
+    {   
+        font-size: 100%;    
+    }
+    .info i
+    {       
+        padding: 8px 13px 8px 13px;
+        font-size: 100%;    
+    }
+    
+}
+@media screen and (max-width: 1141px)
+{   
+    
+    .rechercher
+    {    
+        width: 35%;   
+        font-size: 0.9em;   
+    }
+    .search
+    {
+        width: 55%;
+        
+    }
+    .buttonbloc
+    {
+        width: 85%;
+    }
+    .info i
+    {       
+        padding: 7px 11px 7px 11px;
+        font-size: 60%;    
+    }
+    
+}
 @media screen and (max-width:1024px)
 {
     #formulaire
     {
-        height: 65vh;
+        height: 55vh;
     }
-    .recherche
+    #formulaire h1
     {
-        width: 42%;        
-    }
-    .map
-    {
-        width:14%;
+        font-size: 1.5em;
     }
     .search
     {
-        width:60%;
+        width:45%;
         font-size: 1em;
     }
     .rechercher i
     {
         font-size: 0em;
     }
+    .recherche
+    {
+        width: 42%;        
+    }
     .groupfiltre
     {
-        flex-direction:column;        
-        flex-wrap: wrap;
-        width: 95%;
-        height: 20vh;    
-    } 
-    .filtre
-    {
-        margin-right: 94%;
-        font-size: 1em;
-    }   
+        height:20vh;
+    }
     .buttonbloc
-    {              
-       
-        width: 95%;
-        height: 8vh;
-        justify-content: left;
-        margin-left: -4%;  
-    }
-    .button
     {
-        margin-left: 0%;
-        margin-right: 3%;
+        width: 95%;
     }
-   
+
+}@media screen and (max-width:900px)
+{
+    .buttonbloc
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    #formulaire
+    {
+        width: 100%;
+        height: 75vh;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .search
+    {
+        width:60%;
+    }
+    .rechercher
+    {
+        width:37%;
+    }
+   .groupfiltre
+   {
+       width: 80%;
+       height: 40vh;   
+   }
+   .filtre
+   {
+
+    width: 50%;
+   }
+   .buttonbloc
+   {
+       height: 25vh;
+       width: 75%;
+       justify-content: left;
+   }
+   .button
+   {
+       height: 30%;
+       margin-right: 3%;
+   }
 }
 @media screen and (max-width:700px)
 {
@@ -465,19 +588,20 @@ header
     .recherche
     {
         width: 85%;
-        margin-left: 5%;
+        height: 8vh;
+        justify-content: center;
                
     }
     .map
     {
-        width: 15%;
+        width: 11%;
         z-index: 1;
         
     }
     .search
     {
         z-index: 0;
-        width: 70%;
+        width: 50%;
         font-size: 1.2em;
 
     }
@@ -486,7 +610,8 @@ header
     {
         z-index: 1;
         flex-wrap: wrap;
-        width: 17%;
+        width: 11%;
+        margin-left: -3%;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         color: transparent;
@@ -497,7 +622,7 @@ header
         
         visibility: visible;
         color: white;
-        font-size: 1.5em;
+        font-size: 1.4em;
         width: 100%;
         margin-top: 25%;
         
@@ -510,6 +635,11 @@ header
         width: 100%;
         height: 40vh;
     } 
+    .groupfiltre .filtre
+    {
+        width: 79%;
+        align-content: flex-start;
+    }
 
      .buttonbloc
     {   
@@ -517,8 +647,30 @@ header
         height: 30vh;
         justify-content:left;
         
-    }   
+    }  
+    }
+    .button
+    {
+        height: 8vh;
+    }
+    .buttonbloc i.fas 
+    {   
+        font-size: 100%;    
+    }
+    .info i
+    {       
+        padding: 5px 10px 5px 10px;
+        font-size: 100%;    
+    }
      
+}
+@media screen and (max-width:576px)
+{
+    
+}
+@media screen and (max-width:320px)
+{
+    
 }
 /* section1 container1 avec hébergement et populaire*/
 .hebergements
@@ -723,45 +875,142 @@ header
     font-size: 0.8em;
 }
 /* media queries  du container1 :hebergements et populaire*/
-@media screen and (max-width:1024px)
+@media screen and (max-width: 1200px)
 {
-    
-    .populaire
+    .vignette2
     {
-        width: 37%;
+        width: 45%;    
     }
-    .populaire h2 
+    .text2 
     {
-        font-size: 1.1em;
-    }
-    .text2
-    {
-        width: 51%;
-        font-size: 0.7em;
+        width: 44%;
     }
     .text2 i 
     {
-        line-height: 7em;
+        line-height: 4.5em;
+        
     }
-    .carte2
+}
+@media screen and (max-width:1141px)
+{
+    .text1 p
     {
-        width: 25vw;
+    
+        font-size: 1.2em;
+        line-height: 1.25em;
+        
+    }
+    .text2 i 
+    {
+        line-height: 4.5em;
+        font-size: 0.7;
+        
+    }
+    .text2 p 
+    {
+        font-size: 0.65em;
+        line-height: 1.5em;
+    }
+    
+}
+@media screen and (max-width:1024px)
+{
+    #hebergement h2 
+    {    
+        font-size: 1em;  
+    }
+    .populaire h2
+    {    
+        font-size: 1em;
+    }
+
+}
+@media screen and (max-width:800px)
+{
+    .hebergements
+    {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap-reverse; 
+        justify-content: space-around; 
+        margin-bottom: 3%;      
     }
     #hebergement
     {
-        width: 60%;
+    
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 3%;
+        
     }
+    .carte1
+    {
+        width: 25vw;
+        height: 25vh;    
+    }
+    .populaire
+    {
+        width: 99%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        margin-bottom: 3%;
+        
+      
+    }
+    .populaire h2
+    {
+        width:99%;
+        margin-bottom: 5%;
+        font-size: 1.2em;
+        float: left;
+        margin-top: 3%;
+        margin-left:2%;    
+    
+    }
+    .carte2
+    {        
+        width: 27.5vw;
+        height: 25vh;
+        margin-left: 1%;               
+    }
+    .vignette2
+    {
+        width: 46%;
+    }
+    .text2 p 
+    {
+        font-size: 0.69em;
+        line-height: 1.4em;
+        margin-top: 2px;
+    }
+    .text2 i 
+    {
+        line-height: 10em;
+        font-size: 0.9;
+        
+    }
+
+    
 }
+
+@media screen and (max-width:576px)
+{
+    
+}
+@media screen and (max-width:320px)
+{
+    
+}
+
 @media screen and (max-width:700px)
 {
     
-    .hebergements
-    {
-        height: 100%;
-        flex-direction: column-reverse;
-        justify-content: space-between;  
-        align-items: center;      
-    }
+   
     #hebergement
     {
         width: 100%;  
@@ -771,54 +1020,61 @@ header
         align-items:center;
         justify-content: space-around;
         border-radius: 0%;
-        background-color: white;
+        background-color:white;
     }
     .carte1
-    {
-        width: 80%;
-        height: 29vh;
+    { 
+        width: 80vw;
+        height: 41vh;
         box-shadow: 5px 5px 5px 5px #f2f2f2;
+        margin-bottom: 5%;
+        
     }
     .vignette1 img
     {
         width: 100%;
-        height: 18vh;
+        height: 23vh;
         margin: 5px 5px 5px 0px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         object-fit: cover;
-        object-position: ;
-        
-    
+        object-position:100% 60%;
     }
     .text1
     {
-
-        height: 9vh;
+        height: 5vh;
     }
     .text1 p
     {
-        width: 60%;
-        height: 90%;
-        font-size: 1.6em;
+        height: 8vh;
+        font-weight: normal;
+        font-size: 1.7em;
+        line-height: 1.3em;
+        margin-top:10%;
+        margin-left: 2%;
     }
-
     .populaire
     {
         width: 100%;
+        height: 140vh;
+        flex-direction: column;
+        justify-content:start;
         border-radius: 0%;  
-        background-color: #f2f2f2 ; 
-        align-items: center; 
+        background-color: #f2f2f2 ;     
     }
     .carte2
     {
-        width: 85%;
-        height: 29vh;
+        width: 80%;
+        height: 35vh;
+        margin:auto;
         box-shadow: 5px 5px 5px 5px #f2f2f2;
+        margin-bottom: 5%;
+        margin-left: 7%;
+       
     }
     .vignette2
     {
-        width: 40%;
+        width: 45%;
         height: 95%;
         margin: 5px 5px 5px 5px;
         border-top-left-radius: 15px;
@@ -826,8 +1082,8 @@ header
     }
     .text2
     {
-        width: 50%;
-        height: 90%;
+        width: 40%;
+        height: 85%;
         margin-top:0.5%;
         
     }
@@ -836,13 +1092,18 @@ header
         height: 99%;
         margin-top: 10%;
         font-size: 1.3em;
-        line-height: 1.5em;
+        line-height: 1.3em;
         margin-left: 1%;
     }
     .text2 i 
     {
        
-        line-height: 10em;
+        line-height: 9em;
+    }
+    .more
+    {
+        margin-left: 1%;
+       
     }
     
 }
@@ -1009,11 +1270,27 @@ header
 }
 
 /* media queries container2*/
+
+
+@media screen and (max-width:576px)
+{
+    
+}
+@media screen and (max-width:320px)
+{
+    
+}
 @media screen and (max-width:1024px)
 {
+   
+    #activites h2
+    {    
+        font-size: 1em;
+        margin-top: 1%;
+    }
     .carte3
     {
-        height: 50vh;
+        height: 55vh;
     }
     .carte3 img 
     {
@@ -1021,31 +1298,31 @@ header
     }
     .carte4
     {
-        height: 50vh;
+        height: 55vh;
     }
     .vignette3
     {
-        height: 19vh ;
+        height: 27vh ;
     }
     .vignette3 img 
     {
-        height: 12vh;
+        height: 20vh;
     }
     .vignette4
     {
-        height: 19vh;
+        height: 23vh;
     }
     .vignette4 img 
     {
-        height: 12vh;
+        height: 15vh;
     }
     .vignette5 
     {
-        height: 19vh;
+        height: 25vh;
     }
     .vignette5 img
     {
-        height: 12vh ;
+        height: 18vh ;
     }
 }
 @media screen and (max-width:700px)
@@ -1053,7 +1330,7 @@ header
     #activites
     {
         width: 100%;
-        height: 240vh; 
+        height: 260vh; 
         margin-left: auto;
         margin-right: auto; 
         margin-bottom: 10%;
@@ -1064,44 +1341,65 @@ header
     }
     #activites h2
     {
-        margin-top: 10%;
-        margin-bottom: 0.5%;
+        font-size: 1.2em;
+        margin-bottom: 2%;
+        margin-left: 10%;
+    
     }
 
     .carte3
     {
-
-        width: 80%;
-        height: 30vh;  
+        width: 80vw;
+        height: 36vh;
+        margin-bottom: 2%;
+        margin-top: 1%; 
+        margin-right: 10%; 
          
     }
     .carte3 img
     {
         width: 100%;
-        height: 22vh;        
+        height: 30vh; 
+        object-fit: cover;
+        object-position: 45% 50%;   
     }
     .carte4
     {
-        width: 80%;
-        height: 68vh;
-        margin-top: 0%; 
+        width: 82vw;
+        height: 75vh;
+        margin-bottom: 2%;
+        margin-right: 10%;
           
     }
     .vignette3
     {
-        height: 30vh;
+        height: 36vh;
     }
     .vignette3 img 
     {
-        height: 22vh;
+        height: 30vh;
+        object-fit: cover;
+        object-position: 100% 40%;
     }
     .vignette4
     {
-        height: 30vh;
+        height: 36vh;
     }
     .vignette4 img 
     {
-        height: 22vh;
+        height: 30vh;
+        object-fit: cover;
+        object-position: 45% 20%;
+    }
+    .vignette5 
+    {
+        height: 36vh;
+    }
+    .vignette5 img
+    {
+        height: 30vh ;
+        object-fit: cover;
+        object-position: 100% 8%;
     }
 
 }
@@ -1131,32 +1429,49 @@ header
    line-height: 2em ;
 }
 /*media queries du footer*/
-@media screen and (max-width:1024px)
+@media screen and (max-width: 1200px)
 {
-    
+    #footer
+    {
+        width: 95%;
+        height: 35vh;           
+    }
 }
+@media screen and (max-width:1141px)
+{
+    #footer
+    {
+        height: 38vh;           
+    }
+    .end p
+    {   
+        line-height: 1.5em ;
+    }
+}
+
+
 @media screen and (max-width:700px)
 {
     #footer
     {
         width: 99%;
-        height: 110vh;
+        height: 60vh;
         margin: auto;
-        margin-top: 9%;
+        margin-top: 5%;
         flex-direction:column;
-        justify-content: space-around;
+        
         background-color: #f2f2f2;
     }
     .end
     {
         width: 80%;
-        height: 35vh;
-        margin-top: 2%;       
+        height: 15vh;
+        margin-top: 0%;       
     }
     .end p
     {   
-        font-size: 1.2em;
-        line-height: 2em ;
+        font-size: 1em;
+        line-height: 1.6em ;
         margin-left: 15%;
     }
 }

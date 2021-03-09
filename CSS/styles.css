@@ -247,13 +247,124 @@ header
 
 
 }
-@media screen and (max-width:576px)
+@media screen and (max-width:480px)
 {
+    #logo img
+    {    
+        width: 150%; 
+    }
+    #blocmenu
+    {
+        width: 100%;
+        height: 25vh;
+        
+    }
     
+    .menu  ul li .item
+    {   
+        z-index: 1;        
+    }
+    .menu .item1
+    {   
+       order: 1; 
+       height: 30px;
+       width: 130px;        
+       margin-left: -30%;   
+       z-index: 1;               
+    }
+    .menu .item2
+    {   
+        order: 2; 
+        height: 30px;
+        width: 120px;
+       padding-right: 2% ;
+        padding-left: 2%;
+        margin-left: 15%;        
+        margin-right: 10%;      
+    }
+    .menu .item3 
+    {
+        order: 0;
+        height: 30px;
+        width: 40%;
+        margin-left: 55%;
+        margin-right: 4%;
+        margin-bottom:4%; 
+        text-align: right;    
+    }
+    .menu
+    {
+        position: absolute;
+        position: relative;
+        width: 410vw;
+        height: 30vh;
+        margin-right: 5%;   
+        z-index: 1; 
+        
+                     
+    }
+    .menu ul     
+    {   position: absolute;
+        width: 110%;
+        height: 25vh;        
+        flex-direction: row;
+        flex-wrap: wrap; 
+        
+    }     
+    .menu ul li a
+    {
+        
+        padding-left: 10%;
+        padding-right: 70%;
+        margin-top: 10%;
+        text-decoration: none;
+        color: black;
+        font-weight: bold; 
+        font-size: 1em;
+        
+    }
+    .menu ul li a:hover
+    {
+    
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 15%;
+        color: #0065FC;
+        
+    }
+    .menu ul li:hover
+    {
+        border-top: none;
+    }
+
+
 }
 @media screen and (max-width:320px)
 {
-    
+    #blocmenu
+    {
+        
+        height: 23vh;
+        
+    }
+    .menu .item1
+    {   
+              
+       margin-left: -45%;   
+                    
+    }
+    .menu .item2
+    {   
+        
+        margin-left: 16%;        
+        margin-right: 6%;      
+    }
+    .menu .item3 
+    {
+        
+        margin-left: 50%;
+          
+    }
+
 }   
 
 /*  header bloc2 formulaire avec button et input*/
@@ -583,7 +694,7 @@ header
     {
         width: 100%;
         margin: auto;
-        height: 83vh;
+        height: 85vh;
     }
     .recherche
     {
@@ -648,7 +759,7 @@ header
         justify-content:left;
         
     }  
-    }
+    
     .button
     {
         height: 8vh;
@@ -664,13 +775,60 @@ header
     }
      
 }
-@media screen and (max-width:576px)
+@media screen and (max-width:480px)
 {
+    .recherche
+    {
+        width: 100%;
+        
+    }
+    .map
+    {
+        width: 13%;      
+    }
+    .search
+    {      
+        width: 65%;
+    }
     
+    .rechercher
+    {
+        width: 13%;
+    }
+    .button
+    {
+        height: 7vh;
+    }
+   
 }
 @media screen and (max-width:320px)
-{
+{   #formulaire
+    {
+        
+        height: 90vh;
+    }
+    .recherche
+    {
+        width: 100%;
+        
+    }
+    .map
+    {
+        width: 14%;      
+    }
+    .search
+    {      
+        width: 70%;
+    }
     
+    .rechercher
+    {
+        width: 14%;
+    }
+    .button
+    {
+        height: 7vh;
+    }
 }
 /* section1 container1 avec hébergement et populaire*/
 .hebergements
@@ -964,7 +1122,7 @@ header
     }
     .populaire h2
     {
-        width:99%;
+        width:95%;
         margin-bottom: 5%;
         font-size: 1.2em;
         float: left;
@@ -994,23 +1152,12 @@ header
         font-size: 0.9;
         
     }
-
-    
-}
-
-@media screen and (max-width:576px)
-{
-    
-}
-@media screen and (max-width:320px)
-{
     
 }
 
 @media screen and (max-width:700px)
 {
     
-   
     #hebergement
     {
         width: 100%;  
@@ -1022,10 +1169,14 @@ header
         border-radius: 0%;
         background-color:white;
     }
+    #hebergement h2 
+    {    
+        font-size: 1.4em;  
+    }
     .carte1
     { 
-        width: 80vw;
-        height: 41vh;
+        width: 75vw;
+        height: 35vh;
         box-shadow: 5px 5px 5px 5px #f2f2f2;
         margin-bottom: 5%;
         
@@ -1062,14 +1213,18 @@ header
         border-radius: 0%;  
         background-color: #f2f2f2 ;     
     }
+    .populaire h2
+    {
+        font-size: 1.4em;
+    }
     .carte2
     {
-        width: 80%;
+        width: 75vw;
         height: 35vh;
         margin:auto;
         box-shadow: 5px 5px 5px 5px #f2f2f2;
         margin-bottom: 5%;
-        margin-left: 7%;
+        margin-left: 10%;
        
     }
     .vignette2
@@ -1082,7 +1237,7 @@ header
     }
     .text2
     {
-        width: 40%;
+        width: 35%;
         height: 85%;
         margin-top:0.5%;
         
@@ -1091,20 +1246,71 @@ header
     {
         height: 99%;
         margin-top: 10%;
-        font-size: 1.3em;
-        line-height: 1.3em;
+        font-size: 1em;
+        line-height: 1.6em;
         margin-left: 1%;
     }
     .text2 i 
     {
        
-        line-height: 9em;
+        line-height: 10em;
     }
     .more
     {
         margin-left: 1%;
        
     }
+    
+}
+@media screen and (max-width:480px)
+{
+    .carte1
+    {    
+        height: 30vh;    
+    }
+    .vignette1 img
+    {
+        width: 100%;
+        height: 20vh;
+    }
+    .text1
+    {
+        height: 4vh;
+    }
+    .text1 p
+    {    
+        margin-top:5%;
+    }
+    .populaire
+    {
+        
+        height: 110vh;
+             
+    }
+    .carte2
+    {
+       
+        height: 30vh;
+           
+    }
+    
+    .text2
+    {
+        width: 35%;
+        height: 85%;
+        margin-top:0.5%;
+        
+    }
+    .text2 p 
+    {
+        height: 90%;        
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+}
+@media screen and (max-width:320px)
+{
     
 }
 /* section  activités à Marseille*/
@@ -1341,31 +1547,40 @@ header
     }
     #activites h2
     {
-        font-size: 1.2em;
+        font-size: 1.4em;
         margin-bottom: 2%;
-        margin-left: 10%;
+        margin-left: 11%;
     
     }
 
     .carte3
     {
-        width: 80vw;
-        height: 36vh;
+        width: 75vw;
+        height: 35vh;
         margin-bottom: 2%;
         margin-top: 1%; 
         margin-right: 10%; 
          
     }
+    .carte3 p
+    {
+        font-size: 0.9em;
+    }
     .carte3 img
     {
         width: 100%;
-        height: 30vh; 
+        height: 28vh; 
         object-fit: cover;
         object-position: 45% 50%;   
     }
+    .vignette3 p
+    {
+        
+        font-size: 0.9em;
+    }
     .carte4
     {
-        width: 82vw;
+        width: 75vw;
         height: 75vh;
         margin-bottom: 2%;
         margin-right: 10%;
@@ -1373,31 +1588,39 @@ header
     }
     .vignette3
     {
-        height: 36vh;
+        height: 35vh;
     }
     .vignette3 img 
     {
-        height: 30vh;
+        height: 28vh;
         object-fit: cover;
         object-position: 100% 40%;
     }
     .vignette4
     {
-        height: 36vh;
+        height: 35vh;
+    }
+    .vignette4 p
+    {
+        font-size: 0.9em;
     }
     .vignette4 img 
     {
-        height: 30vh;
+        height: 28vh;
         object-fit: cover;
         object-position: 45% 20%;
     }
     .vignette5 
     {
-        height: 36vh;
+        height: 35vh;
+    }
+    .vignette5 p
+    {
+        font-size: 0.9em;
     }
     .vignette5 img
     {
-        height: 30vh ;
+        height: 28vh ;
         object-fit: cover;
         object-position: 100% 8%;
     }
@@ -1407,7 +1630,7 @@ header
 #footer
 {
     width: 95%;
-    height: 30vh;
+    height: 32vh;
     margin: auto;
     margin-bottom: 5%;
     display: flex;
@@ -1455,11 +1678,11 @@ header
     #footer
     {
         width: 99%;
-        height: 60vh;
+        height: 65vh;
         margin: auto;
         margin-top: 5%;
         flex-direction:column;
-        
+        padding-bottom: 3%;   
         background-color: #f2f2f2;
     }
     .end

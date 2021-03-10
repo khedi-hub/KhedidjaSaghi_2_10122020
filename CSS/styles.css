@@ -162,7 +162,7 @@ header
     #blocmenu
     {
         width: 100%;
-        height: 29vh; 
+        height: 26vh; 
         display: flex;
         flex-direction: row;  
         justify-content: space-between; 
@@ -247,8 +247,17 @@ header
 
 
 }
+@media screen and (max-width:600px)
+{
+    #blocmenu
+    {
+        width: 100%;
+        height: 25.5vh;        
+    }
+}
 @media screen and (max-width:480px)
 {
+    
     #logo img
     {    
         width: 150%; 
@@ -256,7 +265,7 @@ header
     #blocmenu
     {
         width: 100%;
-        height: 25vh;
+        height: 24.2vh;
         
     }
     
@@ -475,7 +484,7 @@ header
 .button
 {
     width: auto;
-    height: 7.5vh;
+    height: 7.4vh;
     border-radius: 25px 25px 25px 25px;
     border: 2px solid #f2f2f2;
     display: flex;  
@@ -568,9 +577,9 @@ header
         
              
     }
-    .button
+    .button 
     {
-        height: 60%;
+        height: 6.7vh;
     }
     .buttonbloc i.fas 
     {   
@@ -605,7 +614,10 @@ header
         padding: 7px 11px 7px 11px;
         font-size: 60%;    
     }
-    
+    .button 
+    {
+        height: 6.5vh;
+    }
 }
 @media screen and (max-width:1024px)
 {
@@ -638,12 +650,20 @@ header
     {
         width: 95%;
     }
+    .button 
+    {
+        height: 6.5vh;
+    }
 
 }@media screen and (max-width:900px)
 {
     .buttonbloc
     {
         width: 100%;
+    }
+    .button 
+    {
+        height: 6.5vh;
     }
 }
 
@@ -684,7 +704,7 @@ header
    }
    .button
    {
-       height: 30%;
+       height: 6.5vh;
        margin-right: 3%;
    }
 }
@@ -695,6 +715,10 @@ header
         width: 100%;
         margin: auto;
         height: 85vh;
+    }
+    #formulaire h1
+    {
+        font-size: 1.5em;
     }
     .recherche
     {
@@ -762,7 +786,7 @@ header
     
     .button
     {
-        height: 8vh;
+        height: 7vh;
     }
     .buttonbloc i.fas 
     {   
@@ -775,8 +799,13 @@ header
     }
      
 }
+
 @media screen and (max-width:480px)
 {
+    #formulaire
+    {
+        font-size: 0.9em;
+    }
     .recherche
     {
         width: 100%;
@@ -1284,7 +1313,8 @@ header
     .populaire
     {
         
-        height: 110vh;
+        height: 130vh;
+        margin: auto;
              
     }
     .carte2
@@ -1309,9 +1339,53 @@ header
     }
 
 }
-@media screen and (max-width:320px)
+@media screen and (max-width:400px)
 {
+    .carte1
+    {    
+        height: 25vh;    
+    }
+    .vignette1 img
+    {
+        width: 100%;
+        height: 15vh;
+    }
+    .text1
+    {
+        height: 3vh;
+    }
+    .text1 p
+    {    
+        margin-top:0%;
+        font-size: 1.3em;
+    }
+    .populaire
+    {
+        margin: 0%;
+        padding: 0%;
+        height: 110vh;
+             
+    }
+    .carte2
+    {
+       
+        height: 25vh;
+           
+    }
     
+    .text2
+    {
+        width: 35%;
+        height: 85%;
+        margin-top:2%;
+        
+    }
+    .text2 p 
+    {
+        height: 80%;        
+        font-size: 0.8em;
+        line-height: 1.3em;
+    }
 }
 /* section  activités à Marseille*/
 #activites
@@ -1477,15 +1551,6 @@ header
 
 /* media queries container2*/
 
-
-@media screen and (max-width:576px)
-{
-    
-}
-@media screen and (max-width:320px)
-{
-    
-}
 @media screen and (max-width:1024px)
 {
    
@@ -1625,6 +1690,91 @@ header
         object-position: 100% 8%;
     }
 
+}
+@media screen and (max-width:400px)
+{
+    #activites
+    {
+        height: 210vh;   
+    }
+    #activites h2
+    {
+        font-size: 1.4em;
+  
+    }
+
+    .carte3
+    {
+        width: 75vw;
+        height: 30vh;
+                 
+    }
+    .carte3 p
+    {
+        font-size: 0.9em;
+    }
+    .carte3 img
+    {
+        width: 100%;
+        height: 22vh; 
+        object-fit: cover;
+        object-position: 45% 50%;   
+    }
+    .vignette3 p
+    {    
+        font-size: 0.9em;
+    }
+    .carte4
+    {
+        width: 75vw;
+        height: 64vh;
+        margin-bottom: 1%;
+        margin-right: 10%;
+          
+    }
+    .vignette3
+    {
+        height: 30vh;
+    }
+    .vignette3 img 
+    {
+        height: 22vh;
+        object-fit: cover;
+        object-position: 100% 40%;
+    }
+    .vignette4
+    {
+        height: 30vh;
+    }
+    .vignette4 p
+    {
+        font-size: 0.9em;
+    }
+    .vignette4 img 
+    {
+        height: 22vh;
+        object-fit: cover;
+        object-position: 15% 1%;
+    }
+    .vignette5 
+    {
+        height: 30vh;
+    }
+    .vignette5 p
+    {
+        font-size: 0.9em;
+    }
+    .vignette5 img
+    {
+        height: 22vh ;
+        object-fit: cover;
+        object-position: 100% 8%;
+    }
+
+}
+@media screen and (max-width:320px)
+{
+    
 }
 /* footer*/
 #footer

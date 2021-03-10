@@ -1047,7 +1047,6 @@ header
     width: 42%;
     height: 92%;   
     margin-top: 2%;
-    margin-top: 3;
     margin-left: 2%;
 }
 .text2 p 
@@ -1083,14 +1082,14 @@ header
     .text1 p
     {
     
-        font-size: 1.2em;
+        font-size: 1.3em;
         line-height: 1.25em;
         
     }
     .text2 i 
     {
-        line-height: 4.5em;
-        font-size: 0.7;
+        line-height: 8em;
+        
         
     }
     .text2 p 
@@ -1178,7 +1177,7 @@ header
     .text2 i 
     {
         line-height: 10em;
-        font-size: 0.9;
+        font-size: 0.9em;
         
     }
     

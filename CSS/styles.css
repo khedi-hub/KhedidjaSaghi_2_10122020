@@ -144,12 +144,13 @@ header
 }
 
 @media screen and (max-width:700px)
-{
-     #logo
+{  
+    #logo
     {
         width:100%;
         position:relative;
         z-index: -1;
+        
 
     }
     #logo img
@@ -203,9 +204,9 @@ header
     }
     .menu
     {
-        position: absolute;
+       
         position: relative;
-        width: 410vw;
+        width: 380vw;
         height: 30vh;
         margin-right: 5%;   
         z-index: 1; 
@@ -214,7 +215,7 @@ header
     }
     .menu ul     
     {   position: absolute;
-        width: 95%;
+        width: 93%;
         height: 25vh;        
         flex-direction: row;
         flex-wrap: wrap; 
@@ -248,9 +249,14 @@ header
 }
 @media screen and (max-width:600px)
 {
+    body 
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
     #blocmenu
     {
-        width: 100%;
+        width: 95%;
         height: 25.5vh;        
     }
 }
@@ -276,19 +282,18 @@ header
     {   
        order: 1; 
        height: 30px;
-       width: 130px;        
-       margin-left: -30%;   
+       width: 105px;        
+       margin-left: -35%; 
+       margin-right: 10%;  
        z-index: 1;               
     }
     .menu .item2
     {   
         order: 2; 
         height: 30px;
-        width: 120px;
-       padding-right: 2% ;
-        padding-left: 2%;
-        margin-left: 15%;        
-        margin-right: 10%;      
+        width: 105px;
+        margin-left: 5%;        
+        margin-right: -10%;      
     }
     .menu .item3 
     {
@@ -304,7 +309,7 @@ header
     {
         position: absolute;
         position: relative;
-        width: 410vw;
+        width: 369vw;
         height: 30vh;
         margin-right: 5%;   
         z-index: 1; 
@@ -313,7 +318,7 @@ header
     }
     .menu ul     
     {   position: absolute;
-        width: 110%;
+        width: 90%;
         height: 25vh;        
         flex-direction: row;
         flex-wrap: wrap; 
@@ -322,8 +327,8 @@ header
     .menu ul li a
     {
         
-        padding-left: 10%;
-        padding-right: 70%;
+        padding-left: 5%;
+        padding-right: 22%;
         margin-top: 10%;
         text-decoration: none;
         color: black;
@@ -662,7 +667,7 @@ header
     }
     .button 
     {
-        height: 6.5vh;
+        height: 43px;
     }
 }
 
@@ -703,7 +708,7 @@ header
    }
    .button
    {
-       height: 6.5vh;
+       height: 43px;
        margin-right: 3%;
    }
 }
@@ -711,7 +716,7 @@ header
 {
     #formulaire
     {
-        width: 100%;
+        width: 99%;
         margin: auto;
         height: 85vh;
     }
@@ -766,7 +771,7 @@ header
     {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 99%;
         height: 40vh;
     } 
     .groupfiltre .filtre
@@ -785,7 +790,7 @@ header
     
     .button
     {
-        height: 7vh;
+        height: 43px;
     }
     .buttonbloc i.fas 
     {   
@@ -823,10 +828,13 @@ header
     {
         width: 13%;
     }
-    .button
-    {
-        height: 7vh;
-    }
+    .buttonbloc
+   {
+      
+       width: 89%;
+       justify-content:space-between;
+   }
+    
    
 }
 @media screen and (max-width:320px)
@@ -853,10 +861,12 @@ header
     {
         width: 14%;
     }
-    .button
+    .buttonbloc
     {
-        height: 7vh;
+       
+        width: 100%;
     }
+    
 }
 /* section1 container1 avec hébergement et populaire*/
 .hebergements
@@ -868,6 +878,8 @@ header
     justify-content: space-between;
     
 }
+
+
 #hebergement
 {
 
@@ -1001,6 +1013,7 @@ header
 .populaire a
 {
     cursor: pointer;
+    width: 95%;
     text-decoration: none;
     color: black;
     border: transparent;
@@ -1187,8 +1200,8 @@ header
     
     #hebergement
     {
-        width: 100%;  
-        margin: auto;      
+        width: 99%; 
+             
         flex-wrap: wrap;
         flex-direction: column;
         align-items:center;
@@ -1198,7 +1211,8 @@ header
     }
     #hebergement h2 
     {    
-        font-size: 1.4em;  
+        font-size: 1.4em; 
+        width: 95%;
     }
     .carte1
     { 
@@ -1206,6 +1220,7 @@ header
         height: 35vh;
         box-shadow: 5px 5px 5px 5px #f2f2f2;
         margin-bottom: 5%;
+        margin: auto;
         
     }
     .vignette1 img
@@ -1233,7 +1248,7 @@ header
     }
     .populaire
     {
-        width: 100%;
+        width: 99%;
         height: 140vh;
         flex-direction: column;
         justify-content:start;
@@ -1243,6 +1258,7 @@ header
     .populaire h2
     {
         font-size: 1.4em;
+        width: 95%;
     }
     .carte2
     {
@@ -1285,6 +1301,7 @@ header
     .more
     {
         margin-left: 1%;
+        width: 80%;
        
     }
     
@@ -1399,9 +1416,10 @@ header
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 #activites h2
 {
-        width: 100%;
+        width: 95%;
         font-size: 1.2em;
 }
 .carte3
@@ -1598,10 +1616,8 @@ header
 {
     #activites
     {
-        width: 100%;
+        width: 99%;
         height: 260vh; 
-        margin-left: auto;
-        margin-right: auto; 
         margin-bottom: 10%;
         display: flex;
         flex-direction: column;
@@ -1612,7 +1628,7 @@ header
     {
         font-size: 1.4em;
         margin-bottom: 2%;
-        margin-left: 11%;
+        width: 90%;
     
     }
 
@@ -1621,8 +1637,9 @@ header
         width: 75vw;
         height: 35vh;
         margin-bottom: 2%;
-        margin-top: 1%; 
-        margin-right: 10%; 
+        /*margin-top: 1%; 
+        margin-right: 10%; */
+        margin: auto;
          
     }
     .carte3 p
@@ -1646,7 +1663,8 @@ header
         width: 75vw;
         height: 75vh;
         margin-bottom: 2%;
-        margin-right: 10%;
+       /* margin-right: 10%;*/
+       margin: auto;
           
     }
     .vignette3
@@ -1777,7 +1795,7 @@ header
 /* footer*/
 #footer
 {
-    width: 95%;
+    width: 99%;
     height: 32vh;
     margin: auto;
     margin-bottom: 5%;
@@ -1825,10 +1843,10 @@ header
 {
     #footer
     {
-        width: 99%;
+        width: 94%;
         height: 65vh;
-        margin: auto;
         margin-top: 5%;
+        margin: auto;
         flex-direction:column;
         padding-bottom: 3%;   
         background-color: #f2f2f2;

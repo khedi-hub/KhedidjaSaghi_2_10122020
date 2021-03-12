@@ -488,7 +488,7 @@ header
 .button
 {
     width: auto;
-    height: 7.4vh;
+    height: 45px;
     border-radius: 25px 25px 25px 25px;
     border: 2px solid #f2f2f2;
     display: flex;  
@@ -583,7 +583,7 @@ header
     }
     .button 
     {
-        height: 6.7vh;
+        height: 45px;
     }
     .buttonbloc i.fas 
     {   
@@ -618,10 +618,7 @@ header
         padding: 7px 11px 7px 11px;
         font-size: 60%;    
     }
-    .button 
-    {
-        height: 6.5vh;
-    }
+    
 }
 @media screen and (max-width:1024px)
 {
@@ -656,7 +653,7 @@ header
     }
     .button 
     {
-        height: 6.5vh;
+        height: 44px;
     }
 
 }@media screen and (max-width:900px)
